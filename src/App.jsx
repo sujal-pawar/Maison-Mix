@@ -7,13 +7,10 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
-    <main className="h-[100vh]">
-      <div className="flex-center py-4">
-        <Navbar />
-      </div>   
-      <div>
-        <Hero/>
-      </div>   
+    <main>      
+        <Navbar />            
+        <Hero/>      
+        <div className="h-dvh bg-black"></div>
     </main>
   )
 }
