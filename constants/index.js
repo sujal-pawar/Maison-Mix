@@ -1,15 +1,14 @@
 const navLinks = [
  {
+	id: "art",
+	title: "The Art",
+ },{
 	id: "cocktails",
 	title: "Cocktails",
  },
  {
 	id: "about",
 	title: "About Us",
- },
- {
-	id: "work",
-	title: "The Art",
  },
  {
 	id: "contact",
@@ -120,17 +119,17 @@ const socials = [
  {
 	name: "Instagram",
 	icon: "/images/insta.png",
-	url: "#",
+	url: "https://www.instagram.com/sujalsp_/",
  },
  {
 	name: "X (Twitter)",
-	icon: "/images/x.png",
-	url: "#",
+	icon: "/images/linkedin.svg",
+	url: "https://www.linkedin.com/in/sujal-pawar/",
  },
  {
 	name: "Facebook",
 	icon: "/images/fb.png",
-	url: "#",
+	url: "https://github.com/sujal-pawar",
  },
 ];
 
