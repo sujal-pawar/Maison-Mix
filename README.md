@@ -4,13 +4,13 @@
 ### Premium Cocktail Experience with GSAP Animations
 
 <!-- <img src="" alt="Maison Mix Website Preview" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);"> -->
+<a href='https://maison-mix.vercel.app'>
 <img width="1889" height="939" alt="image" src="https://github.com/user-attachments/assets/198dbc4b-2b7e-4cbe-9bab-dad2f9b33c34" />
-
+</a>
 
 
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-yellow?style=for-the-badge&logo=vercel)](https://maison-mix.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/sujal-pawar/Maison-Mix)
 [![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![GSAP](https://img.shields.io/badge/GSAP-3.13.0-88CE02?style=for-the-badge&logo=greensock)](https://greensock.com/gsap/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.17-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
