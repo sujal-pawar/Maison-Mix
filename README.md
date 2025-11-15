@@ -9,6 +9,10 @@ Currently, two official plugins are available:
 
 ## React Compiler
 
+Command for the formating of video for smooth animation it does not runs here run it in terminal by going into the directory where video exist
+
+    '''ffmpeg -i input.mp4 -vf scale=1280:-1 -vcodec libx264 -crf 18 -preset veryfast -g 1 -movflags faststart -pix_fmt yuv420p -an output_gsap.mp4'''
+
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ## Expanding the ESLint configuration

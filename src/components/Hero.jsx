@@ -1,8 +1,17 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { SplitText } from 'gsap/all'
+import { SplitText, ScrollTrigger } from 'gsap/all'
+import { useRef, useEffect } from 'react'
+import { useMediaQuery } from 'react-responsive'
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
+    const videoRef = useRef();
+    const videoContainerRef = useRef();
+    const isMobile = useMediaQuery  ({maxWidth:767})
+
     useGSAP(() => {
         // text animation defination
         const heroSplit = new SplitText('.title', { type: 'chars words' });
@@ -25,6 +34,8 @@ const Hero = () => {
             ease: 'expo.out',
             delay: 1
         });
+
+        // Leaf animations
         gsap.timeline({
             scrollTrigger: {
                 trigger: '#hero',
@@ -32,10 +43,43 @@ const Hero = () => {
                 end: 'bottom top',
                 scrub: true
             }
-        }).to('.right-leaf', {y: 200}, 0).to('.left-leaf', {y: -200}, 0)
+        }).to('.right-leaf', {y: 200}, 0).to('.left-leaf', {y: -200}, 0)    
+
+        const startValue = isMobile?'top 50%':'center 60%';
+        const endValue = isMobile?'120% top':'bottom top';
+        // Video scroll animation timeline
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: 'video',
+                start: startValue,
+                end: endValue,
+                scrub: true, // Smooth scrubbing
+                pin: true,        
+                duration:4        
+            }
+        });
+        
+        videoRef.current.onloadedmetadata=() =>{
+            tl.to(videoRef.current,{
+                currentTime:videoRef.current.duration
+            })
+        }        
+        
+        // Additional video effects for mobile
+        if (isMobile) {
+            tl.to(videoRef.current, {
+                x: -20,
+                ease: 'none',
+                duration: 1
+            }, 0);
+        }
+
+        
     }, [])
     return (
-        <section id='hero' className='noisy'>
+        <>
+        <section id='hero' className=''>
+            
             <h1 className='title'> MOJITO</h1>
             <img src="/images/hero-left-leaf.png" alt="left-leaf"
                 className='left-leaf' />
@@ -56,6 +100,20 @@ const Hero = () => {
                 </div>
             </div>
         </section>
+
+        {/* Command for the formating of video for smooth animation it does not runs here run it in terminal by going into the directory where video exist */}
+        {/* ffmpeg -i input.mp4 -vf scale=1280:-1 -vcodec libx264 -crf 18 -preset veryfast -g 1 -movflags faststart -pix_fmt yuv420p -an output_gsap.mp4 */}
+
+        <div className='video absolute inset-0' ref={videoContainerRef}>
+            <video 
+                src="/videos/output_gsap.mp4" 
+                muted 
+                playsInline 
+                preload='auto'                 
+                ref={videoRef}
+            ></video>
+        </div>
+        </>
     )
 }
 
