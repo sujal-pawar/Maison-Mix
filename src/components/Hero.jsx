@@ -68,9 +68,9 @@ const Hero = () => {
         // Additional video effects for mobile
         if (isMobile) {
             tl.to(videoRef.current, {
-                x: -20,
-                ease: 'none',
-                duration: 1
+                x: 0,
+                ease: 'none',     
+                pin:true
             }, 0);
         }
 
@@ -87,7 +87,7 @@ const Hero = () => {
                 className='right-leaf' />
             <div className='body'>
                 <div className='content'>
-                    <div className='space-y-5 hidden md:block'>
+                    <div className='space-y-5 text-center hidden md:block'>
                         <p>Cool. Crisp. Classic</p>
                         <p className='subtitle'>
                             Sip the Spirit <br /> with break of summer
