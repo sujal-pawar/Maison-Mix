@@ -1,36 +1,52 @@
-# 🍹 Cocktail - Premium Cocktail Experience
+<div align="center">
 
-A modern, interactive cocktail website built with React and GSAP animations. This project showcases smooth scroll-based animations, interactive UI components, and a sleek design for a premium cocktail bar experience.
+# 🍹 Maison Mix
+### Premium Cocktail Experience with GSAP Animations
 
-## 🚀 Demo
+<!-- <img src="" alt="Maison Mix Website Preview" width="800" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);"> -->
+<a href='https://maison-mix.vercel.app'>
+<img width="1889" height="939" alt="image" src="https://github.com/user-attachments/assets/198dbc4b-2b7e-4cbe-9bab-dad2f9b33c34" />
+</a>
 
-[Live Demo](https://maison-mix.vercel.app) | [Repository](https://github.com/sujal-pawar/Maison-Mix)
 
-## 📸 Preview
 
-![Cocktail Website Preview](./public/readme/preview.png)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-yellow?style=for-the-badge&logo=vercel)](https://maison-mix.vercel.app)
+[![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![GSAP](https://img.shields.io/badge/GSAP-3.13.0-88CE02?style=for-the-badge&logo=greensock)](https://greensock.com/gsap/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.17-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 
-## 🛠️ Technologies Used
+*A modern, interactive cocktail website showcasing smooth scroll-based animations, interactive UI components, and premium design aesthetics.*
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
 
 ### Frontend Framework
-- **React 19.2.0** - Modern UI library with hooks and functional components
-- **Vite 7.2.2** - Fast build tool and development server
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=flat-square&logo=react)
+![Vite](https://img.shields.io/badge/Vite-7.2.2-646CFF?style=flat-square&logo=vite)
 
 ### Animations & Graphics
-- **GSAP 3.13.0** - Professional-grade animation library
-  - ScrollTrigger for scroll-based animations
-  - SplitText for text animations
-  - Timeline for complex animation sequences
-- **@gsap/react 2.1.2** - React integration for GSAP
+![GSAP](https://img.shields.io/badge/GSAP-3.13.0-88CE02?style=flat-square&logo=greensock)
+![ScrollTrigger](https://img.shields.io/badge/ScrollTrigger-Enabled-88CE02?style=flat-square)
+![SplitText](https://img.shields.io/badge/SplitText-Animations-88CE02?style=flat-square)
 
 ### Styling & UI
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.17-06B6D4?style=flat-square&logo=tailwindcss)
+![Responsive](https://img.shields.io/badge/React%20Responsive-10.0.1-FF6B6B?style=flat-square)
+
+</div>
+
+**Key Technologies:**
+- **React 19.2.0** - Modern UI library with hooks and functional components
+- **Vite 7.2.2** - Fast build tool and development server
+- **GSAP 3.13.0** - Professional-grade animation library with ScrollTrigger, SplitText, and Timeline
+- **@gsap/react 2.1.2** - React integration for GSAP
 - **Tailwind CSS 4.1.17** - Utility-first CSS framework
 - **React Responsive 10.0.1** - Responsive design utilities
-- **Custom CSS** - Advanced styling and gradients
-
-### Development Tools
-- **ESLint** - Code linting and quality assurance
-- **Vite Plugin React** - React support for Vite
 
 ## ✨ Features
 
@@ -53,9 +69,19 @@ A modern, interactive cocktail website built with React and GSAP animations. Thi
 - **Custom typography** - Modern Negra and serif font combinations
 - **Mobile-first responsive design** - Optimized for all devices
 
-## 🎯 GSAP Learning Journey
+---
 
-While building this project, I learned and implemented several GSAP concepts:
+<div align="center">
+
+## 🏆 GSAP Learning Journey
+
+*This project was built while learning GSAP animations*
+
+<img src="https://img.shields.io/badge/Learning%20Focus-GSAP%20Animations-88CE02?style=for-the-badge&logo=greensock">
+<img src="https://img.shields.io/badge/Skill%20Level-Intermediate-FF6B6B?style=for-the-badge">
+<img src="https://img.shields.io/badge/Animation%20Types-5+-yellow?style=for-the-badge">
+
+</div>
 
 ### Core GSAP Concepts
 ```javascript
@@ -103,34 +129,26 @@ gsap.from(heroSplit.chars, {
    - Staggered element appearances
    - Image entrance effects
 
-## 🚀 Getting Started
+## ⚡ Quick Start
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn package manager
+```bash
+# Clone the repository
+git clone https://github.com/sujal-pawar/Maison-Mix.git
+cd Maison-Mix
 
-### Installation
+# Install dependencies
+npm install
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/sujal-pawar/cocktail.git
-   cd cocktail
-   ```
+# Start development server
+npm run dev
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+# Build for production
+npm run build
+```
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
+<div align="center">
+<strong>🚀 Your cocktail experience will be running on <code>http://localhost:5173</code></strong>
+</div>
 
 ## 🎥 Video Optimization
 
@@ -149,7 +167,7 @@ This command:
 ## 📁 Project Structure
 
 ```
-cocktail/
+maison-mix/
 ├── public/
 │   ├── images/          # Static images and icons
 │   ├── videos/          # Video files for animations
@@ -176,11 +194,10 @@ cocktail/
 
 ## 🌟 Key Learning Outcomes
 
-### GSAP Mastery
+### GSAP 
 - Understanding of GSAP timeline system
 - ScrollTrigger plugin implementation
 - Performance optimization for smooth animations
-- Mobile-responsive animation considerations
 
 ### React Integration
 - Proper cleanup of GSAP instances
@@ -194,21 +211,15 @@ cocktail/
 - Mobile optimization strategies
 - Lazy loading considerations
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **GSAP Team** - For creating an incredible animation library
-- **React Team** - For the amazing React framework
-- **Tailwind CSS** - For the utility-first CSS approach
-- **Design Inspiration** - Modern cocktail bar aesthetics
-
 ---
 
-Built with ❤️ by [Sujal Pawar](https://github.com/sujal-pawar) while learning GSAP animations
+<div align="center">
+
+**Built with ❤️ by [Sujal Pawar](https://github.com/sujal-pawar)**
+
+*Learning GSAP*
+
+[![GitHub followers](https://img.shields.io/github/followers/sujal-pawar?style=social)](https://github.com/sujal-pawar)
+[![GitHub stars](https://img.shields.io/github/stars/sujal-pawar/Maison-Mix?style=social)](https://github.com/sujal-pawar/Maison-Mix)
+
+</div>
