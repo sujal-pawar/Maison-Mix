@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const App = () => {
   return (
     <main>      
-        <Navbar />            
+        <Navbar />                          
         <Hero/>      
         <Cocktails/>
         <About/>

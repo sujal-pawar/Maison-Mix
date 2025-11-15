@@ -38,8 +38,6 @@ const Contact = () => {
 	 
 	 <div className="content">
 		<h2>Where to Find Us</h2>
-
-		
 		<div>
 		 <h3>Contact Us</h3>
 		 <p>(999) 987-6543</p>
@@ -58,7 +56,7 @@ const Contact = () => {
 		<div>
 		 <h3>Socials</h3>
 		 
-		 <div className="flex justify-center gap-5 p-2">
+		 <div className="flex justify-center gap-5 px-2">
               <a href="mailto:sujalpawar00007@gmail.com" aria-label="Email" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                 <Mail className="h-5 w-5" />
               </a>

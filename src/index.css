@@ -6,6 +6,20 @@
     font-family: "Modern Negra";
     src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Modern Negra";
+  src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
+}
+
+.maison-font {
+  font-family: "Modern Negra", serif;
+}
+
+/* simple glow */
+.glow-text {
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
 
 @theme {
     --color-yellow: #e7d393;
